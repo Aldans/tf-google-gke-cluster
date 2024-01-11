@@ -30,7 +30,7 @@ resource "google_container_node_pool" "this" {
 
   node_config {
     machine_type = var.GKE_MACHINE_TYPE
-    spot = var.GKE_MACHINE_SPOT_FALSE
+    spot = var.GKE_MACHINE_SPOT
     disk_size_gb = var.GKE_MACHINE_DISK_SIZE
     disk_type = var.GKE_MACHINE_TYPE
   }
