@@ -15,6 +15,24 @@ variable "GKE_MACHINE_TYPE" {
   description = "Machine type"
 }
 
+variable "GKE_MACHINE_SPOT" {
+  type        = bool
+  default     = false
+  description = "Use or not spot machine default not use 'false'"
+}
+
+variable "GKE_MACHINE_DISK_SIZE" {
+  type        = number
+  default     = 100
+  description = "Machine disk size"
+}
+
+variable "GKE_MACHINE_DISK_TYPE" {
+  type        = string
+  default     = "pd-standard"
+  description = "Machine disk type default 'pd-standard'"
+}
+
 variable "GKE_NUM_NODES" {
   type        = number
   default     = 2
