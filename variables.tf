@@ -27,11 +27,11 @@ variable "GKE_MACHINE_DISK_SIZE" {
   description = "Machine disk size"
 }
 
-variable "GKE_MACHINE_DISK_TYPE" {
-  type        = string
-  default     = "pd-standard"
-  description = "Machine disk type default 'pd-standard'"
-}
+#variable "GKE_MACHINE_DISK_TYPE" {
+#  type        = string
+#  default     = "pd-standard"
+#  description = "Machine disk type default 'pd-standard'"
+#}
 
 variable "GKE_NUM_NODES" {
   type        = number
